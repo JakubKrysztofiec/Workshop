@@ -12,16 +12,17 @@ import java.util.Scanner;
 import static pl.coderslab.ConsoleColors.*;
 
 public class TaskManager {
-    public static void main(String[] args){
-        System.out.println("Welcome to the Task Manager 2.0 :)");
 
+    public static void main(String[] args) {
+
+        System.out.println("Welcome to the Task Manager 2.0 :)");
         Scanner scanner = new Scanner(System.in);
         boolean quit = true;
 
-        while(quit){
+        while (quit) {
             optionList();
             int task = scanner.nextInt();
-            switch(task){
+            switch (task) {
                 case 1: {
                     addTask();
                     break;
@@ -46,9 +47,9 @@ public class TaskManager {
 
         }
     }
-
-
 }
+
+
 
 public static void optionList(){
     System.out.println("Please select an option:");
